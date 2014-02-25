@@ -34,7 +34,7 @@
               <tasks>
                 <!-- clear the deploy area -->
                 <delete dir="${basedir}/target/deploy" />
-                <exec dir="../" executable="mvn" failonerror="true">
+                <exec dir="../../" executable="mvn" failonerror="true">
                   <arg value="-Dmaven.tomcat.home=${basedir}/target/deploy" />
                   <arg value="-Dmaven.test.skip=true" />
                   <arg value="sakai:deploy" />
