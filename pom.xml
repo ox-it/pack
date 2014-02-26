@@ -25,13 +25,6 @@
         <sakai.plugin.version>2.2</sakai.plugin.version>
     </properties>
     
-    <modules>
-        <module>pack-bin</module>
-        <module>pack-build</module>
-        <module>pack-demo</module>
-        <module>pack-src</module>
-    </modules>
-    
     <issueManagement>
         <system>jira</system>
         <url>http://jira.sakaiproject.org/browse/SAK</url>
@@ -61,6 +54,39 @@
             <properties>
                 <sakai.skip.tests>true</sakai.skip.tests>
             </properties>
+        </profile>
+        <profile>
+            <id>pack</id>
+            <modules>
+                <module>pack-src</module>
+                <module>pack-bin</module>
+                <module>pack-build</module>
+                <module>pack-demo</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>pack-bin</id>
+            <modules>
+                <module>pack-bin</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>pack-build</id>
+            <modules>
+                <module>pack-build</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>pack-demo</id>
+            <modules>
+                <module>pack-demo</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>pack-src</id>
+            <modules>
+                <module>pack-src</module>
+            </modules>
         </profile>
     </profiles>
     
